@@ -1,0 +1,81 @@
+/* Homepage Layout */
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #ede7f6; /* Soft lavender background */
+  color: #4a148c; /* Deep purple text color */
+}
+
+/* Left-side Section */
+.left-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3e5f5; /* Light lavender background */
+  border-radius: 8px;
+}
+
+.left-side img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Right-side Section */
+.right-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3e5f5; /* Light lavender background */
+  border-radius: 8px;
+}
+
+/* Title Styling */
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 50px;
+  font-weight: 1000;
+  color: #4a148c; /* Deep purple color */
+  margin: 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  background-color: #5e35b1; /* Vibrant purple */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin:10px;
+}
+
+button:hover {
+  background-color: #4527a0; /* Slightly darker purple */
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 14px;
+  color: #4a148c; /* Deep purple text */
+}
+
+p button {
+  background: none;
+  color: #5e35b1; /* Vibrant purple for the link */
+  border: none;
+  cursor: pointer;
+}
+
+p button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: NOTIFICATION-SERVICE
+
+  # Data source configuration
+  datasource:
+    url: jdbc:mysql://localhost:3307/coursedb
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+
+  # Email configuration for sending notifications
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vinayksm86@gmail.com  # Replace with your email
+    password: sqws txkf krie ikgp  # Replace with your email password or use app password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  # Enable scheduling for periodic task execution
+  task:
+    scheduling:
+      enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
